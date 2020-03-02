@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  font-family: "Libre Franklin";
+}
+
+.container {
+  text-align: center;
+  font-family: "Libre Franklin";
+}
+
+.container .logo {
+  margin-top: 2%;
+}
+
+.container h1 {
+  font-weight: 300;
+  color: #969696;
+  font-size: 2.3rem;
+  margin-top: 3%;
+}
+
+.inputField {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 36%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 3% auto;
+}
+
+.inputField button {
+  cursor: pointer;
+  height: 5.8vh;
+  width: 10vw;
+  border-radius: 25px;
+  background: #4f7df3;
+  padding: 5px;
+  color: #ffffff;
+  border: 2px solid #4f7df3;
+  font-weight: 600;
+  -webkit-box-shadow: -1px 4px 14px 0px #c2d3ff;
+  box-shadow: -1px 4px 14px 0px #c2d3ff;
+}
+
+.inputField button:hover {
+  background: #799bf1;
+  border-color: #799bf1;
+}
+
+.inputField button:focus {
+  outline: none;
+}
+
+.inputField input {
+  width: 22vw;
+  height: 4vh;
+  border-radius: 25px;
+  padding: 5px;
+  padding-left: 25px;
+  border: 2px solid #c2d3ff;
+}
+
+.inputField input::-webkit-input-placeholder {
+  color: #c2d3ff;
+}
+
+.inputField input:-ms-input-placeholder {
+  color: #c2d3ff;
+}
+
+.inputField input::-ms-input-placeholder {
+  color: #c2d3ff;
+}
+
+.inputField input::placeholder {
+  color: #c2d3ff;
+}
+
+.inputField input::-webkit-input-placeholder {
+  color: #c2d3ff;
+}
+
+.inputField input:-ms-input-placeholder {
+  color: #c2d3ff;
+}
+
+.inputField input:focus {
+  outline: none;
+}
+
+.mainImg {
+  position: relative;
+  height: 50vh;
+  width: 40vw;
+  margin-top: 1%;
+}
+
+.socialMed {
+  padding: 3%;
+  width: 16%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: relative;
+  color: #4f7df3;
+  font-size: 1.4rem;
+  margin: 0 auto;
+}
+
+.socialMed .fa {
+  padding: 9px 12px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.socialMed .fa:hover {
+  color: #ffffff;
+  background: #4f7df3;
+  border-radius: 25px;
+}
+
+.socialMed .fa-facebook {
+  padding: 11px 16px;
+}
+
+.attribution {
+  color: #969696;
+}
+
+.errorText {
+  position: absolute;
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 40px;
+  left: 35%;
+}
+
+/* responsive */
+@media screen and (max-width: 500px) {
+  .container .logo {
+    margin-top: 8%;
+    margin-bottom: 5%;
+    height: 3vh;
+  }
+  .container h1 {
+    font-size: 1.3rem;
+    margin-bottom: 8%;
+  }
+  .container p {
+    margin-bottom: 10%;
+    font-size: 13px;
+  }
+  .inputField {
+    display: block;
+    width: 70%;
+  }
+  .inputField input {
+    width: 60vw;
+    margin-bottom: 40px;
+  }
+  .inputField button {
+    width: 70vw;
+    margin-bottom: 20px;
+  }
+  .errorText {
+    width: 60%;
+    margin-top: -24%;
+    left: 75px;
+  }
+  .mainImg {
+    position: relative;
+    height: 25vh;
+    width: 75vw;
+    margin-top: 1%;
+    margin-bottom: 40px;
+  }
+  .socialMed {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

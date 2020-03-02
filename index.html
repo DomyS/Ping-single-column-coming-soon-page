@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Ping coming soon page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img class="logo" src="images/logo.svg" alt="logo" />
+      <h1>We are launching <strong style="color: black">soon!</strong></h1>
+      <p>Subscribe and get notified</p>
+      <div class="inputField">
+        <input
+          type="text"
+          name="text1"
+          id="inputText"
+          placeholder="Your email address..."
+          required
+        />
+        <button
+          type="submit"
+          id="submit"
+          value="submit"
+          onclick="validateEmail()"
+        >
+          Notify Me
+        </button>
+        <div class="errorText">
+          <p id="errorText"></p>
+        </div>
+      </div>
+      <img
+        class="mainImg"
+        src="/images/illustration-dashboard.png"
+        alt="mainImg"
+      />
+    </div>
+    <div class="socialMed">
+      <i class="fa fa-facebook" aria-hidden="true"></i>
+      <i class="fa fa-twitter" aria-hidden="true"></i>
+      <i class="fa fa-instagram" aria-hidden="true"></i>
+    </div>
+    <footer>
+      <p class="attribution">
+        &copy;Copyright Ping. All rights reserved.
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

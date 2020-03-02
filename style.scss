@@ -1,0 +1,166 @@
+$Blue: hsl(223, 87%, 63%);
+$paleBlue: hsl(223, 100%, 88%);
+$lightRed: hsl(354, 100%, 66%);
+$Gray: hsl(0, 0%, 59%);
+$darkBlue: hsl(209, 33%, 12%);
+$hoverBlue: hsl(223, 81%, 71%);
+
+* {
+  padding: 0;
+  font-family: "Libre Franklin";
+}
+
+.container {
+  text-align: center;
+  font-family: "Libre Franklin";
+  .logo {
+    margin-top: 2%;
+  }
+  h1 {
+    font-weight: 300;
+    color: $Gray;
+    font-size: 2.3rem;
+    margin-top: 3%;
+  }
+}
+
+.inputField {
+  display: flex;
+  width: 36%;
+  justify-content: space-evenly;
+  margin: 3% auto;
+  button {
+    cursor: pointer;
+    height: 5.8vh;
+    width: 10vw;
+    border-radius: 25px;
+    background: $Blue;
+    padding: 5px;
+    color: #ffffff;
+    border: 2px solid $Blue;
+    font-weight: 600;
+    -webkit-box-shadow: -1px 4px 14px 0px rgba(194, 211, 255, 1);
+    -moz-box-shadow: -1px 4px 14px 0px rgba(194, 211, 255, 1);
+    box-shadow: -1px 4px 14px 0px rgba(194, 211, 255, 1);
+    &:hover {
+      background: $hoverBlue;
+      border-color: $hoverBlue;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  input {
+    width: 22vw;
+    height: 4vh;
+    border-radius: 25px;
+    padding: 5px;
+    padding-left: 25px;
+    border: 2px solid $paleBlue;
+    &::placeholder {
+      color: $paleBlue;
+    }
+    &::-webkit-input-placeholder {
+      color: $paleBlue;
+    }
+    &:-ms-input-placeholder {
+      color: $paleBlue;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.mainImg {
+  position: relative;
+  height: 50vh;
+  width: 40vw;
+  margin-top: 1%;
+}
+
+.socialMed {
+  padding: 3%;
+  width: 16%;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  color: $Blue;
+  font-size: 1.4rem;
+  margin: 0 auto;
+  .fa {
+    padding: 9px 12px;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    &:hover {
+      color: #ffffff;
+      background: $Blue;
+      border-radius: 25px;
+    }
+  }
+  .fa-facebook {
+    padding: 11px 16px;
+  }
+}
+
+.attribution {
+  color: $Gray;
+}
+
+.errorText {
+  position: absolute;
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 40px;
+  left: 35%;
+}
+
+/* responsive */
+
+@media screen and (max-width: 500px) {
+  .container {
+    .logo {
+      margin-top: 8%;
+      margin-bottom: 5%;
+      height: 3vh;
+    }
+    h1 {
+      font-size: 1.3rem;
+      margin-bottom: 8%;
+    }
+    p {
+      margin-bottom: 10%;
+      font-size: 13px;
+    }
+  }
+  .inputField {
+    display: block;
+    width: 70%;
+    input {
+      width: 60vw;
+      margin-bottom: 40px;
+    }
+    button {
+      width: 70vw;
+      margin-bottom: 20px;
+    }
+  }
+  .errorText {
+    width: 60%;
+    margin-top: -24%;
+    left: 75px;
+  }
+  .mainImg {
+    position: relative;
+    height: 25vh;
+    width: 75vw;
+    margin-top: 1%;
+    margin-bottom: 40px;
+  }
+  .socialMed {
+    font-size: 1rem;
+  }
+}
